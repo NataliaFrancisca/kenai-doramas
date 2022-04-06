@@ -7,8 +7,10 @@ export const PopularSeriesStyled = styled(PopularSeries)`
     flex-direction: column;
     font-family: 'Opens Sans', sans-serif;
     color: #F9F9F9;
-    margin: 1rem 0;
     padding: 0 1rem;
+
+    margin-top: 5.6rem;
+    margin-bottom: 2rem;
 
     h1{
         font-family: 'Opens Sans', sans-serif;
@@ -30,10 +32,12 @@ export const PopularSeriesStyled = styled(PopularSeries)`
         justify-content: space-between;
     }
 
+    
     .card{
         width: 300px;
         height: 440px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), ${props => `url(${props.backgroundImage})`}; */
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)); */
     } 
 
  

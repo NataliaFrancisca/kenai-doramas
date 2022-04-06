@@ -7,7 +7,7 @@ export const HighLightStyled = styled(HighLight)`
     flex-direction: column;
     font-family: 'Opens Sans', sans-serif;
     color: #F9F9F9;
-    margin: 1rem 0;
+    margin-top: 2rem;
     padding: 0 1rem;
 
 
@@ -28,18 +28,18 @@ export const HighLightStyled = styled(HighLight)`
 
         .stars{
             display: flex;
-            margin-top: 1.4rem;
+            margin: 1rem 0;
         }
 
         .stars img{
-            height: 20px;
-            width: 20px;
+            height: 30px;
+            width: 30px;
         }
 
         h1{
             font-weight: 600;
             font-size: 3em;
-            margin: 1.5rem 0;
+            margin: 1rem 0;
         }
 
         p{

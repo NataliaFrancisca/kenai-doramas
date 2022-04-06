@@ -19,7 +19,7 @@ const HighLight = ({className}) => {
                 <img src="img/icons/star.png" />
                 <img src="img/icons/star.png" />
                 <img src="img/icons/star.png" />
-                </div>
+            </div>
 
             <h1>{dataHeader.title}</h1>
 
