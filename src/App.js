@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import { MenuStyled } from "./components/Menu/MenuStyled";
 import { GlobalStyles } from "./styles/GlobalStyles";
 import { PageStyled } from "./styles/PageStyled";
-
+import { HeaderStyled } from "./components/Header/HeaderStyled";
 import { FooterStyled } from "./components/Footer/FooterStyled"
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <GlobalStyles />
       <PageStyled>
         <MenuStyled />
-        <Header />
+        <HeaderStyled />
       </PageStyled>
      
       <FooterStyled />
