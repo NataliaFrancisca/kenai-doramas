@@ -6,19 +6,26 @@ import Footer from "./components/Footer/Footer";
 import { MenuStyled } from "./components/Menu/MenuStyled";
 import { GlobalStyles } from "./styles/GlobalStyles";
 import { PageStyled } from "./styles/PageStyled";
+
+
+
 import { HeaderStyled } from "./components/Header/HeaderStyled";
-import { FooterStyled } from "./components/Footer/FooterStyled"
+import { HighLightStyled} from "./components/HighLight/HighLightStyled";
+import { PopularSeriesStyled } from "./components/PopularSeries/PopularSeriesStyled";
+import { FooterStyled } from "./components/Footer/FooterStyled";
+
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <PageStyled>
-        <MenuStyled />
-        <HeaderStyled />
-      </PageStyled>
-     
-      <FooterStyled />
+        <PageStyled>
+          <MenuStyled />
+          <HighLightStyled />
+          <PopularSeriesStyled />
+        </PageStyled>
+        
+        <FooterStyled />
     </div>
   );
 }
