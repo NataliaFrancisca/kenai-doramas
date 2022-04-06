@@ -2,11 +2,9 @@ import styled from "styled-components"
 import Menu from "./Menu"
 
 export const MenuStyled = styled(Menu)`
-    width: 100vw;
-    height: auto;
-    padding: 1rem;
-
+    height: 10vh;
     display: flex;
+    padding: 0 1rem;
 
     nav{
         width: 100%;
@@ -42,14 +40,18 @@ export const MenuStyled = styled(Menu)`
             font-size: 18px;
         }
 
-        .menu-elements li img{
-            width: 20px;
-            height: 20px;
-            object-fit: contain;
+        .menu-elements li:last-child{
+            margin-right: 0rem;
         }
 
         .menu-elements li:hover {
             filter: drop-shadow(16px 16px 20px yellow) invert(55%);
+        }
+
+        .menu-elements li img{
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
         }
     }
 

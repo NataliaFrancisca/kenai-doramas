@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Footer from "./Footer";
 
 export const FooterStyled = styled(Footer)`
-    width: 100vw;
     height: 10vh;
     background: black;
     padding: 0 1rem;
@@ -23,6 +22,10 @@ export const FooterStyled = styled(Footer)`
 
         li{
             margin: 0 1.5rem;
+        }
+
+        li:last-child{
+            margin-right: 0rem;
         }
 
         li img{
