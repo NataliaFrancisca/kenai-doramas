@@ -1,6 +1,6 @@
 import React from "react";
 
-import { db } from "../../../db/data";
+import { db } from "../../db/data";
 
 const HighLight = ({className}) => {
 

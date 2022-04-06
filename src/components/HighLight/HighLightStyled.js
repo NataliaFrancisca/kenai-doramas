@@ -2,16 +2,17 @@ import styled from "styled-components";
 import HighLight from "./HighLight";
 
 export const HighLightStyled = styled(HighLight)`
-    width: 50%;
-    margin: 3rem;
+    width: 40%;
     display: flex;
     flex-direction: column;
     font-family: 'Opens Sans', sans-serif;
     color: #F9F9F9;
+    margin: 1rem 0;
+    padding: 0 1rem;
 
 
         .header-category-list{
-            display: flex;
+            padding-left: .3rem;
 
             span{
                 margin: 0 1rem;
