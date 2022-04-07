@@ -15,10 +15,11 @@ const HighLight = ({className}) => {
             </div>
 
             <div className="stars">
-                <img src="img/icons/star.png" />
-                <img src="img/icons/star.png" />
-                <img src="img/icons/star.png" />
-                <img src="img/icons/star.png" />
+                <img src="img/icons/star.png" alt="star"/>
+                <img src="img/icons/star.png" alt="star"/>
+                <img src="img/icons/star.png" alt="star"/>
+                <img src="img/icons/star.png" alt="star"/>
+                <img src="img/icons/star.png" alt="star"/>
             </div>
 
             <h1>{dataHeader.title}</h1>
