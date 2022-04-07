@@ -39,4 +39,8 @@ export const PopularSeriesStyled = styled(PopularSeries)`
         gap: 1rem;
     }
 
+    @media only screen and (max-width: 700px) {
+        margin-top: 4rem;
+    }
+
 `

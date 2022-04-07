@@ -10,7 +10,6 @@ export const HighLightStyled = styled(HighLight)`
     margin-top: 4rem;
     padding: 0 1rem;
 
-
         .header-category-list{
             padding-left: .3rem;
             margin: .5rem 0;
@@ -64,5 +63,13 @@ export const HighLightStyled = styled(HighLight)`
             margin-top: 2rem;
             border-radius: 4px;
 
+        }
+
+        @media only screen and (max-width: 800px) {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: 550px) {
+            width: 100%;
         }
 `

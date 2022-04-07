@@ -3,7 +3,8 @@ import Card from "./Card";
 
 export const CardStyled = styled(Card)`
     width: 100%;
-    height: 440px;
+    min-height: 500px;
+    height: auto;
     background-image: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, .8) 80.79%), ${props => `url(${props.imageBackground})`};
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,6 +33,15 @@ export const CardStyled = styled(Card)`
         background-color: #181818;
         border-radius: 0px 8px;
         width: fit-content;
+    }
+
+
+    @media only screen and (max-width: 750px) {
+        height: 600px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        height: 700px;
     }
 
 `
