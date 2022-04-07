@@ -5,6 +5,7 @@ export const MenuStyled = styled(Menu)`
     height: 10vh;
     display: flex;
     padding: 0 1rem;
+    margin-top: 1rem;
 
     nav{
         width: 100%;

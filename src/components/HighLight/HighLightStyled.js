@@ -2,23 +2,27 @@ import styled from "styled-components";
 import HighLight from "./HighLight";
 
 export const HighLightStyled = styled(HighLight)`
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     font-family: 'Opens Sans', sans-serif;
     color: #F9F9F9;
-    margin-top: 2rem;
+    margin-top: 4rem;
     padding: 0 1rem;
 
 
         .header-category-list{
             padding-left: .3rem;
+            margin: .5rem 0;
 
             span{
-                margin: 0 1rem;
+                margin: 1rem;
                 color: #FFA634;
                 font-family: 'Open Sans';
                 font-weight: 600;
+                padding: 4px 8px;
+                background-color: #181818;
+                border-radius: 0px 8px;
             }
 
             span:nth-child(1){
@@ -28,7 +32,7 @@ export const HighLightStyled = styled(HighLight)`
 
         .stars{
             display: flex;
-            margin: 1rem 0;
+            margin: .5rem 0;
         }
 
         .stars img{
@@ -39,7 +43,7 @@ export const HighLightStyled = styled(HighLight)`
         h1{
             font-weight: 600;
             font-size: 3em;
-            margin: 1rem 0;
+            margin: .5rem 0;
         }
 
         p{
