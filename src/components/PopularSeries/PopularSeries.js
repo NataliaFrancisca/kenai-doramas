@@ -2,10 +2,11 @@ import React from "react";
 
 import {db} from "../../db/data"
 
+import { CardStyled } from "../UI/CardStyled";
+
 const PopularSeries = ({className}) => {
 
     const data = db.filter(serie => serie.id !== 0);
-    console.log(data);
 
     return(
         <section className={className}>
@@ -13,18 +14,8 @@ const PopularSeries = ({className}) => {
 
             <div className="list">
                 {data.map(serie => (
-                    <div className="card" backgroundImage={serie.image}>
-                    </div>
+                  <CardStyled imageBackground={serie.image} dataSerie={serie}/>
                 ))}
-               
-
-                {/* <div className="card">
-                    
-                </div>
-
-                <div className="card">
-                    
-                </div> */}
             </div>
         </section>
     )
