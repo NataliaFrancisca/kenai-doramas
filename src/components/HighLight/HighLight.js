@@ -9,8 +9,8 @@ const HighLight = ({className}) => {
     return(
         <section className={className}>
             <div className="header-category-list">
-                {dataHeader.category.map(category => (
-                    <span className="category">{category}</span>
+                {dataHeader.category.map((category, index) => (
+                    <span className="category" key={index}>{category}</span>
                 ))}
             </div>
 

@@ -14,7 +14,7 @@ const PopularSeries = ({className}) => {
 
             <div className="list">
                 {data.map(serie => (
-                  <CardStyled imageBackground={serie.image} dataSerie={serie}/>
+                  <CardStyled key={serie.id} imageBackground={serie.image} dataSerie={serie}/>
                 ))}
             </div>
         </section>
