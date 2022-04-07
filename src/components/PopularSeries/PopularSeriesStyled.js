@@ -9,7 +9,7 @@ export const PopularSeriesStyled = styled(PopularSeries)`
     color: #F9F9F9;
     padding: 0 1rem;
 
-    margin-top: 5.6rem;
+    margin-top: 9rem;
     margin-bottom: 2rem;
 
     h1{
@@ -28,18 +28,15 @@ export const PopularSeriesStyled = styled(PopularSeries)`
     }
 
     .list{
-        display: flex;
-        justify-content: space-between;
+        /* display: flex; */        
+        flex-wrap: wrap;
+        margin-top: 1rem;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
     }
-
-    
-    .card{
-        width: 300px;
-        height: 440px;
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), ${props => `url(${props.backgroundImage})`}; */
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)); */
-    } 
-
- 
 
 `
