@@ -9,7 +9,7 @@ export const PageStyled = styled.main`
     background-size: contain;
 
     @media only screen and (max-width: 1100px) {
-        background-image: linear-gradient(180deg,rgba(1,1,1,0.6) 0%,rgba(1,1,0,2.8) 16.69%),url(img/pousando-no-amor.jpg);
+        background-image: linear-gradient(180deg,rgba(1,1,1,0.6) 0%,rgba(1,1,0,2.8) 15.00%),url(img/pousando-no-amor.jpg);
       
         background-position: top;
         background-size: initial;
