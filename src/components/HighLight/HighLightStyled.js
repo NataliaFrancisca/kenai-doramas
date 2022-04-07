@@ -68,8 +68,4 @@ export const HighLightStyled = styled(HighLight)`
         @media only screen and (max-width: 800px) {
             width: 80%;
         }
-
-        @media only screen and (max-width: 550px) {
-            width: 100%;
-        }
 `

@@ -9,16 +9,10 @@ export const PageStyled = styled.main`
     background-size: contain;
 
     @media only screen and (max-width: 1100px) {
-        background-size: cover;
-        background-position: center;
-    }
-
-    @media only screen and (max-width: 700px) {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(img/serie-pousando-no-amor.jpg);
-        background-size: cover;
-        background-position: left;
-        /* background-position: center;
-        background-attachment: fixed; */
+        background-image: linear-gradient(180deg,rgba(1,1,1,0.6) 0%,rgba(1,1,0,2.8) 20.79%),url(img/pousando-no-amor.jpg);
+      
+        background-position: top;
+        background-size: initial;
     }
     
 `
