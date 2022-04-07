@@ -11,6 +11,5 @@ export const PageStyled = styled.main`
     @media only screen and (max-width: 1100px) {
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
     }
 `
