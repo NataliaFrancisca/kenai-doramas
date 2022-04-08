@@ -4,7 +4,6 @@ import Card from "./Card";
 export const CardStyled = styled(Card)`
     width: 100%;
     min-height: 500px;
-    height: auto;
     background-image: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, .8) 80.79%), ${props => `url(${props.imageBackground})`};
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,6 +17,9 @@ export const CardStyled = styled(Card)`
     gap: .5rem;
     align-items: center;
     padding: 1rem;
+
+    position: relative;
+    overflow: hidden;
 
     h2{
         font-family: 'Opens Sans', sans-serif;
@@ -35,6 +37,36 @@ export const CardStyled = styled(Card)`
         width: fit-content;
     }
 
+    .details-serie{
+        background-color: #fff;
+        padding: 2rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: black;
+        height: 60%;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in;
+        background: rgba(230,230,230,1);
+
+        p{
+            font-size: .9em;
+            text-align: justify;
+            margin-top: 1rem;
+        }
+
+        span{
+            margin-right: .5rem;
+        }
+
+        span:last-child{
+            margin-left: 0rem;
+        }
+    }
+
+    &:hover .details-serie{
+        transform: translateY(0);
+    }
 
     @media only screen and (max-width: 750px) {
         height: 600px;
