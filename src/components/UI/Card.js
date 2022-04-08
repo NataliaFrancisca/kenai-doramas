@@ -26,8 +26,9 @@ export default Card;
 
 const DetailsSerie = ({details}) => {
 
-    const {description, category} = details;
+    const {description, category, watch} = details;
 
+    console.log(details)
     return(
         <div className="details-serie">
             <div className="list-category">
@@ -37,6 +38,10 @@ const DetailsSerie = ({details}) => {
             </div>
 
             <p>{description}</p>
+
+            <button>
+                <a href={watch} target="_blank">Watch Now</a>
+            </button>
         </div>
     )
 }

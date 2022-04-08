@@ -43,8 +43,9 @@ export const CardStyled = styled(Card)`
         position: absolute;
         left: 0;
         bottom: 0;
-        color: black;
-        height: 60%;
+        color: #181818;
+        min-height: 60%;
+        height: auto;
         transform: translateY(100%);
         transition: transform 0.3s ease-in;
         background: rgba(230,230,230,1);
@@ -55,12 +56,35 @@ export const CardStyled = styled(Card)`
             margin-top: 1rem;
         }
 
+        .list-category{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         span{
+            margin: .5rem 0;
             margin-right: .5rem;
         }
 
         span:last-child{
             margin-left: 0rem;
+        }
+
+        button{
+            width: 100%;
+            background-color: #FFA634;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            padding: 1rem .8rem;
+            font-size: 1em;
+            border-radius: 4px;
+            font-weight: 600;
+
+            a{
+                text-decoration: none;
+                color: #181818;
+            }
         }
     }
 
