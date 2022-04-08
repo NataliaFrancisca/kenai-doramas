@@ -6,8 +6,8 @@
 
 ### 💁Informações:
 
--  Esse projeto foi baseado no **desafio #17 - Kenai** da comunidade codelândia <a href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=40282%3A767">Acesse aqui </a> 
-> 
+-  Esse projeto foi baseado no **desafio #17 - Kenai** da comunidade codelândia
+- Criado pelo <a href="https://github.com/iuricode"> Iuri Silva </a>
 - Canal da codelândia: <a href="https://discord.gg/wNCWTVuxyz">Codelândia</a>
 
 ---
