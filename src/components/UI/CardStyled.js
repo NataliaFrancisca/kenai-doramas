@@ -72,11 +72,11 @@ export const CardStyled = styled(Card)`
 
         button{
             width: 100%;
+            height: 50px;
+            padding: .2rem;
             background-color: #FFA634;
             margin-top: 1rem;
             display: flex;
-            justify-content: center;
-            padding: 1rem .8rem;
             font-size: 1em;
             border-radius: 4px;
             font-weight: 600;
@@ -84,6 +84,11 @@ export const CardStyled = styled(Card)`
             a{
                 text-decoration: none;
                 color: #181818;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }
