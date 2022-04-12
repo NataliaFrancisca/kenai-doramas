@@ -66,7 +66,7 @@ export const db = [
         note: 8.0,
         description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
         image: "img/squid-game-poster.jpg",
-        watch: "https://www.netflix.com/br-en/title/81290293"
+        watch: "https://www.netflix.com/title/81040344"
     },
 
 
