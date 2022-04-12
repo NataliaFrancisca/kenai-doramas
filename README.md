@@ -1,4 +1,4 @@
-# :kr: :clapper: Kenai | Doramas
+# :clapper: Kenai | Doramas
 
 ### Projeto para treinar sobre os conceitos básicos de *styled-components*
 
