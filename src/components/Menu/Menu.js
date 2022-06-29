@@ -1,18 +1,26 @@
 import React from "react";
 
+import { MenuHamburguer } from "./MenuStyled";
+
 const Menu = ({className}) => {
     return(
         <menu className={className}>
             <nav>
-                <ul className="menu-title">
-                    <li>Kenai</li>
-                </ul>
+                <h2>Kenai</h2>
+
+                <input id="menu-hamburger" type="checkbox" />
+                <label for="menu-hamburger">
+                    <div className="menu">
+                        <span className="hamburger" />
+                    </div>
+                </label>
+
                 <ul className="menu-elements">
-                    <li><img src="img/icons/search.png"></img></li>
-                    <li>Início</li>
-                    <li>Minha Lista</li>
-                    <li><img src="img/icons/bell.png"></img></li>
-                    <li><img src="img/icons/user.png"></img></li>
+                    <li><span className="material-symbols-outlined">search</span></li>
+                    <li>Home</li>
+                    <li>My List</li>
+                    <li><span className="material-symbols-outlined">notifications</span></li>
+                    <li><span className="material-symbols-outlined">person</span></li>
                 </ul>
             </nav>
 
