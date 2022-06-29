@@ -16,9 +16,8 @@ function App() {
           <MenuStyled />
           <HighLightStyled />
           <PopularSeriesStyled />
+          <FooterStyled />
         </PageStyled>
-        
-        <FooterStyled />
     </div>
   );
 }
