@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export const CardStyled = styled(Card)`
     width: 100%;
-    min-height: 500px;
+    min-height: 440px;
     background-image: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, .8) 80.79%), ${props => `url(${props.imageBackground})`};
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,8 +13,7 @@ export const CardStyled = styled(Card)`
     display: grid;
     align-content: flex-end;
     grid-template-columns: 1f;
-    grid-template-rows: 10% 10% 10%;
-    gap: .5rem;
+    grid-template-rows: 10% 10% 15%;
     align-items: center;
     padding: 1rem;
 
@@ -37,6 +36,10 @@ export const CardStyled = styled(Card)`
         width: fit-content;
     }
 
+    &:hover .details-serie{
+        transform: translateY(0);
+    }
+
     .details-serie{
         background-color: #fff;
         padding: 2rem;
@@ -46,14 +49,14 @@ export const CardStyled = styled(Card)`
         color: #181818;
         min-height: 60%;
         height: auto;
-        transform: translateY(100%);
+        transform: translateY(101%);
         transition: transform 0.3s ease-in;
         background: rgba(230,230,230,1);
 
         p{
             font-size: .9em;
             text-align: justify;
-            margin-top: 1rem;
+            margin-top: 10px;
         }
 
         .list-category{
@@ -72,32 +75,11 @@ export const CardStyled = styled(Card)`
 
         button{
             width: 100%;
-            height: 50px;
-            padding: .2rem;
-            background-color: #FFA634;
             margin-top: 1rem;
-            display: flex;
-            font-size: 1em;
-            border-radius: 4px;
-            font-weight: 600;
-
-            a{
-                text-decoration: none;
-                color: #181818;
-                height: 100%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
         }
     }
 
-    &:hover .details-serie{
-        transform: translateY(0);
-    }
-
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 800px) {
         height: 600px;
     }
 
