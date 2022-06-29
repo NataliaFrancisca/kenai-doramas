@@ -5,7 +5,6 @@ import Footer from "./Footer";
 export const FooterStyled = styled(Footer)`
     height: 10vh;
     background: black;
-    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,21 +20,41 @@ export const FooterStyled = styled(Footer)`
         list-style: none;
 
         li{
-            margin: 0 1.5rem;
+            margin-left: 40px;
+            cursor: pointer;
+
+            img{
+                width: 20px;
+                height: 20px;
+                filter: blur(0.2px) brightness(1.1) hue-rotate(10deg) opacity(0.9) saturate(1.5) sepia(0.4);
+                object-fit: contain;
+            }
+
+            :first-child{
+                margin-left: 0rem;
+            }
+
+            :hover{
+                filter: blur(0.2px) brightness(1.1) hue-rotate(10deg) opacity(0.9) saturate(1.5) sepia(0.4)
+            }
         }
 
-        li:last-child{
-            margin-right: 0rem;
+    }
+
+    @media (max-width: 500px){
+        justify-content: center;
+
+        h1{
+            display: none;
         }
 
-        li img{
-            width: 20px;
-            height: 20px;
-            object-fit: contain;
+        ul li:first-child{
+            margin-left: 10px;
         }
 
-        li:hover{
-            filter: drop-shadow(16px 16px 20px yellow) invert(55%);
+        ul li{
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
 
