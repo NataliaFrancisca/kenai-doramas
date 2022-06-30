@@ -7,6 +7,7 @@ export const HighLightStyled = styled(HighLight)`
     flex-direction: column;
     font-family: 'Opens Sans', sans-serif;
     color: #F9F9F9;
+    margin: 10px 0;
    
     .category{
         margin: 25px 0;
