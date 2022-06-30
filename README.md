@@ -12,6 +12,10 @@
 
 ---
 
+### Recursos que me ajudaram:
+- Links que me ajudaram: https://codepen.io/Raddy/pen/NojQmd
+
+
 ### 🖥️ Projeto:
 - 🔗 https://project-kenai-doramas-nf.vercel.app/
 >
