@@ -28,30 +28,19 @@ export const PopularSeriesStyled = styled(PopularSeries)`
         background: #FFA634;
     }
 
-    .list{
-        /* margin-top: 1rem;
-
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 40px; */
-    }
-
 `
 
 export const Carrousel = styled.section`
     display: flex;
     justify-content: space-between;
 
-    min-height: 600px;
+    min-height: 400px;
     height: auto;
 
     position: relative;
     scroll-behavior: smooth;
     transition: 250ms all;
     
-
     #back-group, #next-group{
         color: orange;
         position: absolute;
@@ -77,7 +66,7 @@ export const Carrousel = styled.section`
         background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 130%);
     }
 
-    #grid-section{
+    /* #grid-section{
         margin-top: 1rem;
 
         display: grid;
@@ -87,6 +76,39 @@ export const Carrousel = styled.section`
         width: 100%;
         gap: 30px;
         grid-template-columns: repeat(${props => props.numberColumns}, 1fr);
-        /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+        /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    } */
+
+
+    #grid-section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(${props => props.numberColumns},100%);
+        overflow:hidden;
+        scroll-behavior: smooth;
+        margin: 20px 0;
     }
+
+    #grid-section article{
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        gap: 20px;
+
+        transition: transform .8s ease-in;
+    }
+
+    .section:nth-child(-n+${props => props.changeGrid}){
+        transform: ${props => `translateX(-${props.changeGrid}00%)`}
+    }
+
+    #section${props => props.changeGrid} {
+        transform: ${props => `translateX(-${props.changeGrid}00%)`}
+    }
+
+    .section:nth-child(n+${props => props.changeGrid + 1}){
+        transform: ${props => `translateX(-${props.changeGrid}00%)`}
+    }
+
 `
