@@ -3,11 +3,11 @@ import Card from "./Card";
 
 export const CardStyled = styled(Card)`
     width: 100%;
-    min-height: 500px;
+    min-height: 400px;
     background-image: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, .8) 80.79%), ${props => `url(${props.imageBackground})`};
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     border-radius: 3px;
 
     display: grid;
@@ -78,9 +78,10 @@ export const CardStyled = styled(Card)`
             margin-top: 1rem;
         }
     }
-  
-    @media only screen and (max-width: 550px) {
-        height: 700px;
+
+
+    @media only screen and (max-width: 850px) {
+        min-height: 400px;
     }
 
 `
