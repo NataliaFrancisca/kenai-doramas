@@ -14,4 +14,9 @@ export const GlobalStyles = createGlobalStyle`
         height: auto;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
+
 `
