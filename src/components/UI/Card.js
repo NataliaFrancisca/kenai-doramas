@@ -7,7 +7,7 @@ const Card = ({className, dataSerie}) => {
     const {category, title, description, watch} = dataSerie;
 
     return(
-        <article className={className}>
+        <div className={className}>
             <span>{category[0]}</span>
             <div className="list-stars">
                 <img src="img/icons/rating.svg" alt="rating"/>
@@ -28,7 +28,7 @@ const Card = ({className, dataSerie}) => {
                     <a href={watch} target="_blank">Watch Now</a>
                 </Button>
             </section>
-        </article>
+        </div>
     )
 }
 
