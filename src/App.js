@@ -1,23 +1,19 @@
 import React from "react";
 
-import { MenuStyled } from "./components/Menu/MenuStyled";
-import { GlobalStyles } from "./styles/GlobalStyles";
-import { PageStyled } from "./styles/PageStyled";
+import {Routes, Route } from "react-router-dom";
 
-import { HighLightStyled} from "./components/HighLight/HighLightStyled";
-import { PopularSeriesStyled } from "./components/PopularSeries/PopularSeriesStyled";
-import { FooterStyled } from "./components/Footer/FooterStyled";
+import { GlobalStyles } from "./styles/GlobalStyles";
+import { UsersHomePage } from "./pages/UsersHomePage/style";
+import { UserHomePage } from "./pages/UserHomePage/style";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles />
-        <PageStyled>
-          <MenuStyled />
-          <HighLightStyled />
-          <PopularSeriesStyled />
-          <FooterStyled />
-        </PageStyled>
+      <Routes>
+        <Route path="/" element={<UsersHomePage />} />
+        <Route path="/browse" element={<UserHomePage />} />
+      </Routes>
     </div>
   );
 }
