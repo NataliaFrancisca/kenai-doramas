@@ -71,80 +71,62 @@ export const db = [
 
     {
         id: 7,
-        title: "Squid Game",
-        category: ["Action", "Drama", "Mystery"],
-        note: 8.0,
-        description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
-        image: "img/squid-game-poster.jpg",
-        watch: "https://www.netflix.com/title/81040344"
+        title: "Business Proposal",
+        category: ["Comedy", "Drama", "Romance"],
+        note: 8.1,
+        description: "In disguise as her friend, Ha-ri shows up to a blind date to scare him away. But plans go awry when he turns out to be her CEO - and makes a proposal.",
+        image: "img/business-proposal.jpg",
+        watch: "https://www.netflix.com/title/81509440"
     },
 
     {
         id: 8,
-        title: "Squid Game",
-        category: ["Action", "Drama", "Mystery"],
-        note: 8.0,
-        description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
-        image: "img/squid-game-poster.jpg",
-        watch: "https://www.netflix.com/title/81040344"
+        title: "Tomorrow",
+        category: ["Action", "Drama", "Comedy"],
+        note: 7.7,
+        description: "Made half-human and half-spirit by accident, a young man is employed by a company of grim reapers in the underworld to carry out special missions.",
+        image: "img/tomorrow.jpg",
+        watch: "https://www.netflix.com/title/81503460"
     },
 
     {
         id: 9,
-        title: "Squid Game",
-        category: ["Action", "Drama", "Mystery"],
-        note: 8.0,
-        description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
-        image: "img/squid-game-poster.jpg",
-        watch: "https://www.netflix.com/title/81040344"
+        title: "Our Blues",
+        category: ["Drama"],
+        note: 8.5,
+        description: "Romance is sweet and bitter - and life riddled with ups and downs - in multiple stories about people who live and work on bustling Jeju Island.",
+        image: "img/our-blues.png",
+        watch: "https://www.netflix.com/title/81568842"
     },
 
     {
         id: 10,
-        title: "Squid Game",
-        category: ["Action", "Drama", "Mystery"],
-        note: 8.0,
-        description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
-        image: "img/squid-game-poster.jpg",
-        watch: "https://www.netflix.com/title/81040344"
+        title: "Twenty Five Twenty One",
+        category: ["Romance", "Drama"],
+        note: 8.7,
+        description: "In a time when dreams seem out of reach, a teen fencer pursues big ambitions and meets a hardworking young man who seeks to rebuild his life.",
+        image: "img/twenty-five-twenty-one.jpg",
+        watch: "https://www.netflix.com/title/81517168"
     },
-
     
     {
         id: 11,
-        title: "Squid Game",
-        category: ["Action", "Drama", "Mystery"],
-        note: 8.0,
-        description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
-        image: "img/squid-game-poster.jpg",
-        watch: "https://www.netflix.com/title/81040344"
+        title: "The King's Affection",
+        category: ["Drama", "Romance"],
+        note: 7.9,
+        description: "The story is set during the Joseon Dynasty when twins were considered an ominous sign. When the Crown Princess Consort gives birth to twins, an order is sent to kill the daughter. To save her, she is secretly sent out of the palace.",
+        image: "img/the-kings-affection.jpg",
+        watch: "https://www.netflix.com/title/81430282"
     },
 
     {
         id: 12,
-        title: "Squid Game",
-        category: ["Action", "Drama", "Mystery"],
-        note: 8.0,
-        description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
-        image: "img/squid-game-poster.jpg",
-        watch: "https://www.netflix.com/title/81040344"
+        title: "Vincenzo",
+        category: ["Action", "Comedy", "Crime"],
+        note: 8.4,
+        description: "During a visit to his motherland, a Korean-Italian mafia lawyer gives an unrivaled conglomerate a taste of its own medicine with a side of justice.",
+        image: "img/vicenzo.jpg",
+        watch: "https://www.netflix.com/title/81365087"
     },
-
-
-
-
-
 ]
 
-
-// Pousando no Amor
-// Memórias de Alhambra
-// Goblin - The Lonely and Great God
-// Apostando alto - start up
-// Beating Again - batendo novamente
-// Navillera
-// Love alarm
-// My first first love
-// A poem a day
-// Squid game
-// Age of youth
