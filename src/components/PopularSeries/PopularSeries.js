@@ -56,7 +56,9 @@ const PopularSeries = ({className}) => {
     }
 
     const changeMinimumCards = (width) => {
-        if(width < 550){
+        if(width < 450){
+            setMinimumCardsGrid(1);
+        }else if(width < 550){
             setMinimumCardsGrid(2);
         }else if(width < 850){
             setMinimumCardsGrid(3);
