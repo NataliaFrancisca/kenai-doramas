@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import Menu from "./Menu"
+import MenuComponent from "./index";
 
-export const MenuStyled = styled(Menu)`
+export const Menu = styled(MenuComponent)`
     height: 10vh;
     display: flex;
     margin-top: 1rem;
@@ -161,7 +161,6 @@ export const MenuStyled = styled(Menu)`
             height: 60px;
             width: 60px;
         }
-
 }
 
 

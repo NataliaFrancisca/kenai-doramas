@@ -1,8 +1,7 @@
 import styled from "styled-components";
+import FooterComponent from ".";
 
-import Footer from "./Footer";
-
-export const FooterStyled = styled(Footer)`
+export const Footer = styled(FooterComponent)`
     height: 10vh;
     background: black;
     display: flex;

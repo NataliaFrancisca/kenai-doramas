@@ -2,10 +2,10 @@ import React from "react";
 import { useEffect, useState, useRef } from "react";
 import {db} from "../../db/data"
 
-import { Carrousel } from "./PopularSeriesStyled";
-import { CardStyled } from "../Card/CardStyled";
+import { Carrousel } from "./style";
+import { Card } from "../Card/style";
 
-const PopularSeries = ({className}) => {
+const PopularSeriesComponent = ({className}) => {
 
     const [groupsShows, setGroupsShows] = useState([]);
     const [currentGroupId, setCurrentGroupId] = useState(0);
@@ -101,7 +101,7 @@ const PopularSeries = ({className}) => {
                         {groupsShows.map((group, index) => (
                             <article id={`section${index}`} className="section-group-shows" key={index}>
                                 {group.series.map(serie => (
-                                    <CardStyled key={serie.id} imageBackground={serie.image} dataSerie={serie} />
+                                    <Card key={serie.id} imageBackground={serie.image} dataSerie={serie} />
                                 ))}
                             </article>
                         ))}
@@ -117,4 +117,4 @@ const PopularSeries = ({className}) => {
     )
 }
 
-export default PopularSeries;
+export default PopularSeriesComponent;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = ({className}) => {
+const FooterComponent = ({className}) => {
     return(
         <footer className={className}>
             <h1>Kenai</h1>
@@ -15,4 +15,4 @@ const Footer = ({className}) => {
     )
 }
 
-export default Footer;
+export default FooterComponent;

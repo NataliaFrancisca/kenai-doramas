@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Card from "./Card";
+import CardComponent from "./index";
 
-export const CardStyled = styled(Card)`
+export const Card = styled(CardComponent)`
     width: 100%;
     height: 450px;
     border-radius: 3px;

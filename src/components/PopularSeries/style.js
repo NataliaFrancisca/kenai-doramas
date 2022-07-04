@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import PopularSeries from "./PopularSeries"
+import PopularSeriesComponent from "./index";
 
-export const PopularSeriesStyled = styled(PopularSeries)`
+export const PopularSeries = styled(PopularSeriesComponent)`
     display: flex;
     flex-direction: column;
     font-family: 'Opens Sans', sans-serif;

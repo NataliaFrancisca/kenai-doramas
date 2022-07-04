@@ -1,15 +1,15 @@
-import { MenuStyled } from "../../components/Menu/MenuStyled"
-import { HighLightStyled } from "../../components/HighLight/HighLightStyled";
-import { PopularSeriesStyled } from "../../components/PopularSeries/PopularSeriesStyled";
-import { FooterStyled } from "../../components/Footer/FooterStyled";
+import { Menu } from "../../components/Menu/style";
+import { HighLight } from "../../components/HighLight/style";
+import { PopularSeries } from "../../components/PopularSeries/style";
+import { Footer } from "../../components/Footer/style";
 
 const UserHomePageComponent = (props) => {
     return(
         <main className={props.className}>
-            <MenuStyled />
-            <HighLightStyled />
-            <PopularSeriesStyled />
-            <FooterStyled />
+            <Menu />
+            <HighLight />
+            <PopularSeries />
+            <Footer />
         </main>
     )
 }

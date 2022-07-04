@@ -4,7 +4,7 @@ import { db } from "../../db/data";
 
 import { Button } from "../../styles/Elements";
 
-const HighLight = ({className}) => {
+const HighLightComponent = ({className}) => {
 
     const dataHeader = db.find(element => element.id == 0)
     
@@ -33,4 +33,4 @@ const HighLight = ({className}) => {
     )
 }
 
-export default HighLight;
+export default HighLightComponent;

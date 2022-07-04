@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import HighLight from "./HighLight";
+import HighLightComponent from "./index";
 
-export const HighLightStyled = styled(HighLight)`
+export const HighLight = styled(HighLightComponent)`
     width: 50%;
     display: flex;
     flex-direction: column;

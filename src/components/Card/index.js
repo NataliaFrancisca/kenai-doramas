@@ -2,7 +2,7 @@ import React from "react";
 
 import { Button } from "../../styles/Elements";
 
-const Card = ({className, dataSerie}) => {
+const CardComponent = ({className, dataSerie}) => {
 
     const {category, title, description, watch, image} = dataSerie;
 
@@ -35,7 +35,7 @@ const Card = ({className, dataSerie}) => {
     )
 }
 
-export default Card;
+export default CardComponent;
 
 
 
