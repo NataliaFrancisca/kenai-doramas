@@ -7,8 +7,7 @@ export const PopularSeriesStyled = styled(PopularSeries)`
     font-family: 'Opens Sans', sans-serif;
     color: #F9F9F9;
 
-    margin-top: 9rem;
-    margin-bottom: 2rem;
+    margin: 100px 0;
 
     position: relative;
 
@@ -34,9 +33,6 @@ export const Carrousel = styled.section`
     display: flex;
     justify-content: space-between;
 
-    min-height: 400px;
-    height: auto;
-
     position: relative;
     scroll-behavior: smooth;
     transition: 250ms all;
@@ -45,7 +41,7 @@ export const Carrousel = styled.section`
         color: orange;
         position: absolute;
         top: 0px;
-        z-index: 111;
+        z-index: 1;
         height: 100%;
         width: 60px;
         cursor: pointer;
@@ -66,40 +62,26 @@ export const Carrousel = styled.section`
         background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 130%);
     }
 
-    /* #grid-section{
-        margin-top: 1rem;
-
-        display: grid;
-        align-items: center;
-        justify-content: start;
-      
-        width: 100%;
-        gap: 30px;
-        grid-template-columns: repeat(${props => props.numberColumns}, 1fr);
-        /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    } */
-
-
     #grid-section{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(${props => props.numberColumns},100%);
-        overflow:hidden;
+        overflow: hidden;
         scroll-behavior: smooth;
         margin: 20px 0;
     }
 
-    #grid-section article{
+    #grid-section .section-group-shows{
         width: 100%;
 
         display: grid;
-        grid-template-columns: repeat(4, 24%);
+        grid-template-columns: repeat(${props => props.numberCards}, 1fr);
         gap: 20px;
 
         transition: transform .8s ease-in;
     }
 
-    .section:nth-child(-n+${props => props.changeGrid}){
+    .section-group-shows:nth-child(-n+${props => props.changeGrid}){
         transform: ${props => `translateX(-${props.changeGrid}00%)`}
     }
 
@@ -107,7 +89,7 @@ export const Carrousel = styled.section`
         transform: ${props => `translateX(-${props.changeGrid}00%)`}
     }
 
-    .section:nth-child(n+${props => props.changeGrid + 1}){
+    .section-group-shows:nth-child(n+${props => props.changeGrid + 1}){
         transform: ${props => `translateX(-${props.changeGrid}00%)`}
     }
 
