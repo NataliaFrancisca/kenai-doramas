@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import {db} from "../../db/data"
 
 import { Carrousel } from "./PopularSeriesStyled";
-import { CardStyled } from "../UI/CardStyled";
+import { CardStyled } from "../Card/CardStyled";
 
 const PopularSeries = ({className}) => {
 
@@ -91,7 +91,7 @@ const PopularSeries = ({className}) => {
     })
 
     return(
-        <main className={className}>
+        <section className={className}>
             <h1>Populares</h1>
 
             {groupsShows ? 
@@ -116,7 +116,7 @@ const PopularSeries = ({className}) => {
                 </Carrousel>
                 : null
             }
-        </main>
+        </section>
     )
 }
 
