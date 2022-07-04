@@ -109,6 +109,27 @@ export const db = [
         watch: "https://www.netflix.com/title/81040344"
     },
 
+    
+    {
+        id: 11,
+        title: "Squid Game",
+        category: ["Action", "Drama", "Mystery"],
+        note: 8.0,
+        description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
+        image: "img/squid-game-poster.jpg",
+        watch: "https://www.netflix.com/title/81040344"
+    },
+
+    {
+        id: 12,
+        title: "Squid Game",
+        category: ["Action", "Drama", "Mystery"],
+        note: 8.0,
+        description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
+        image: "img/squid-game-poster.jpg",
+        watch: "https://www.netflix.com/title/81040344"
+    },
+
 
 
 
