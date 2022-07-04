@@ -98,7 +98,7 @@ export const CardStyled = styled(Card)`
 
 
     @media only screen and (min-width: 1100px) {
-        height: 70vh;
+        height: 80vh;
     }
 
     @media only screen and (max-width: 450px) {
