@@ -60,6 +60,10 @@ export const CardStyled = styled(Card)`
         transition: transform 0.3s ease-in;
         background: rgba(230,230,230,1);
 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
         p{
             font-size: .9em;
             text-align: justify;
