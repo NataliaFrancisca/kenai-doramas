@@ -7,7 +7,8 @@ export const PopularSeriesStyled = styled(PopularSeries)`
     font-family: 'Opens Sans', sans-serif;
     color: #F9F9F9;
 
-    margin: 100px 0;
+    margin-top: 100px;
+    margin-bottom: 50px;
 
     position: relative;
 
