@@ -24,10 +24,10 @@
 ---
 
 ### 📑Pendentes:
-- Ainda preciso melhorar o carregamento das images
-- Criar o menu responsivo
-- Deixar todos os elementos em um idioma só
+- [X] Criar o menu responsivo
+- [X] Deixar todos os elementos em um idioma só
 - Melhorar o código
+- Ainda preciso melhorar o carregamento das imagens
 
 ---
 
