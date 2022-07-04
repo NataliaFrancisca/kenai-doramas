@@ -73,7 +73,6 @@ const PopularSeries = ({className}) => {
 
     useEffect(() => {
         const maxElements = groupsShows.length;
-
         currentGroupId == maxElements - 1 ? refButtonNext.current.disabled = true : refButtonNext.current.disabled = false;
         currentGroupId == 0 ? refButtonPrev.current.disabled = true :  refButtonPrev.current.disabled = false;
     },[currentGroupId])
@@ -84,15 +83,13 @@ const PopularSeries = ({className}) => {
     },[minimumCardsGrid])
 
     useEffect(() => {
-        window.addEventListener('resize', () => {
-            changeMinimumCards(window.innerWidth);
-        })
+        window.addEventListener('resize', () => changeMinimumCards(window.innerWidth));
         changeMinimumCards(window.innerWidth);
     })
 
     return(
         <section className={className}>
-            <h1>Populares</h1>
+            <h1>Popular</h1>
 
             {groupsShows ? 
                 <Carrousel numberColumns={groupsShows?.length} numberCards={minimumCardsGrid} changeGrid={currentGroupId} >
