@@ -3,19 +3,20 @@ import Card from "./Card";
 
 export const CardStyled = styled(Card)`
     width: 100%;
-    min-height: 400px;
+    height: 500px;
     background-image: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, .8) 80.79%), ${props => `url(${props.imageBackground})`};
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     border-radius: 3px;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-content: flex-end;
-    grid-template-columns: 1f;
-    grid-template-rows: 10% 10% 15%;
-    align-items: center;
-    padding: 1rem;
+
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15px;
 
     position: relative;
     overflow: hidden;
@@ -23,7 +24,12 @@ export const CardStyled = styled(Card)`
     h2{
         font-family: 'Opens Sans', sans-serif;
         font-weight: 600;
-        font-size: 1.2em;   
+        font-size: 1.2em;  
+        margin: 10px 0; 
+
+        @media only screen and (max-width: 650px) {
+            font-size: 1em; 
+        }
     }
 
     span{
@@ -34,6 +40,7 @@ export const CardStyled = styled(Card)`
         background-color: #181818;
         border-radius: 0px 8px;
         width: fit-content;
+        margin: 10px 0;
     }
 
     &:hover .details-serie{
@@ -80,8 +87,16 @@ export const CardStyled = styled(Card)`
     }
 
 
-    @media only screen and (max-width: 850px) {
-        min-height: 400px;
+    @media only screen and (max-width: 950px) {
+        height: 500px;
+    }
+
+    @media only screen and (max-width: 650px) {
+        height: 400px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        height: 350px;
     }
 
 `
