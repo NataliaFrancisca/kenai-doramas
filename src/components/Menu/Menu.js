@@ -1,7 +1,5 @@
 import React from "react";
 
-import { MenuHamburguer } from "./MenuStyled";
-
 const Menu = ({className}) => {
     return(
         <menu className={className}>
@@ -9,7 +7,7 @@ const Menu = ({className}) => {
                 <h2>Kenai</h2>
 
                 <input id="menu-hamburger" type="checkbox" />
-                <label for="menu-hamburger">
+                <label htmlFor="menu-hamburger">
                     <div className="menu">
                         <span className="hamburger" />
                     </div>
