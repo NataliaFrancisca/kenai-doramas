@@ -11,7 +11,7 @@ const HighLight = ({className}) => {
     const {category, title, description, watch} = dataHeader;
 
     return(
-        <section className={className}>
+        <header className={className}>
       
             <span className="category">{category[0]}</span>
       
@@ -29,7 +29,7 @@ const HighLight = ({className}) => {
             <Button>
                 <a href={watch} target="_blank">Watch Now</a>
             </Button>
-        </section>
+        </header>
     )
 }
 
