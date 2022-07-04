@@ -15,6 +15,7 @@ export const CardStyled = styled(Card)`
         height: 100%;
         width: 100%;
         z-index: -1;
+        size: (min-width: 650px) 50vw, 100vw;
     }
 
     .initial-details{
@@ -95,6 +96,10 @@ export const CardStyled = styled(Card)`
         }
     }
 
+
+    @media only screen and (min-width: 1100px) {
+        height: 70vh;
+    }
 
     @media only screen and (max-width: 450px) {
         height: 600px;
