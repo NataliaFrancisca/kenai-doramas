@@ -6,15 +6,16 @@
 
 ### 💁Informações:
 
--  Esse projeto foi baseado no **desafio #17 - Kenai** da comunidade codelândia
+- Esse projeto foi baseado no **desafio #17 - Kenai** da comunidade codelândia
 - Criado pelo <a href="https://github.com/iuricode"> Iuri Silva </a>
 - Canal da codelândia: <a href="https://discord.gg/wNCWTVuxyz">Codelândia</a>
 
 ---
 
 ### Recursos que me ajudaram:
-- Links que me ajudaram: https://codepen.io/Raddy/pen/NojQmd
+- Carrousel das imagens: https://codepen.io/Raddy/pen/NojQmd
 
+---
 
 ### 🖥️ Projeto:
 - 🔗 https://project-kenai-doramas-nf.vercel.app/
@@ -26,8 +27,8 @@
 ### 📑Pendentes:
 - [X] Criar o menu responsivo
 - [X] Deixar todos os elementos em um idioma só
-- Melhorar o código
-- Ainda preciso melhorar o carregamento das imagens
+- [ ] Melhorar o código
+- [ ] Ainda preciso melhorar o carregamento das imagens
 
 ---
 
