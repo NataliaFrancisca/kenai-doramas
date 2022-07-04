@@ -7,12 +7,10 @@ import { CardStyled } from "../UI/CardStyled";
 
 const PopularSeries = ({className}) => {
 
-    let minimumCardsGrid = 4;
-
     const [groupsShows, setGroupsShows] = useState([]);
-
-    const [wasClicked, setWasClicked] = useState();
     const [currentGroupId, setCurrentGroupId] = useState(0);
+
+    const [minimumCardsGrid, setMinimumCardsGrid] = useState(4);
 
     const refButtonPrev = useRef();
     const refButtonNext = useRef();
@@ -41,6 +39,32 @@ const PopularSeries = ({className}) => {
         }
     }
 
+    const onNext = () => {
+        if(currentGroupId == groupsShows.length - 1){
+            refButtonNext.current.disabled = true;
+            return false;
+        }
+        setCurrentGroupId(currentGroupId + 1);
+    }
+
+    const onPrevious = () => {
+        if(currentGroupId == 0){
+            refButtonPrev.current.disabled = true;
+            return false;
+        }
+        setCurrentGroupId(currentGroupId - 1);
+    }
+
+    const changeMinimumCards = (width) => {
+        if(width < 550){
+            setMinimumCardsGrid(2);
+        }else if(width < 850){
+            setMinimumCardsGrid(3);
+        }else if(width >= 850){
+            setMinimumCardsGrid(4);
+        }
+    }
+
     useEffect(() => {
         return groupsShows.length < data.length / minimumCardsGrid ? createGroupOfShows() : false;
     },[])
@@ -50,44 +74,33 @@ const PopularSeries = ({className}) => {
 
         currentGroupId == maxElements - 1 ? refButtonNext.current.disabled = true : refButtonNext.current.disabled = false;
         currentGroupId == 0 ? refButtonPrev.current.disabled = true :  refButtonPrev.current.disabled = false;
-        
     },[currentGroupId])
 
+    useEffect(() => {
+        setGroupsShows([]);
+        createGroupOfShows();
+    },[minimumCardsGrid])
 
-    const onNextShows = () => {
-        const maxElements = groupsShows.length;
-        
-        if(currentGroupId == maxElements - 1){
-            refButtonNext.current.disabled = true;
-            return false;
-        }
-
-        setCurrentGroupId(currentGroupId + 1);
-        setWasClicked('next');
-    }
-
-    const onPreviousShows = () => {
-        if(currentGroupId == 0){
-            refButtonPrev.current.disabled = true;
-            return false;
-        }
-        setCurrentGroupId(currentGroupId - 1);
-        setWasClicked('prev');
-    }
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            changeMinimumCards(window.innerWidth);
+        })
+        changeMinimumCards(window.innerWidth);
+    })
 
     return(
         <main className={className}>
             <h1>Populares</h1>
 
             {groupsShows ? 
-                <Carrousel numberColumns={groupsShows?.length} changeGrid={currentGroupId} checkWasClicked={wasClicked}>
-                    <button id="back-group" ref={refButtonPrev} onClick={() => onPreviousShows()}>
+                <Carrousel numberColumns={groupsShows?.length} numberCards={minimumCardsGrid} changeGrid={currentGroupId} >
+                    <button id="back-group" ref={refButtonPrev} onClick={onPrevious}>
                         <span className="material-symbols-outlined">chevron_left</span>
                     </button>
 
                     <section id="grid-section">
                         {groupsShows.map((group, index) => (
-                            <article id={`section${index}`} className="section">
+                            <article id={`section${index}`} className="section-group-shows" key={index}>
                                 {group.series.map(serie => (
                                     <CardStyled key={serie.id} imageBackground={serie.image} dataSerie={serie} />
                                 ))}
@@ -95,30 +108,12 @@ const PopularSeries = ({className}) => {
                         ))}
                     </section>
 
-                    <button id="next-group" ref={refButtonNext} onClick={() => onNextShows()}>
+                    <button id="next-group" ref={refButtonNext} onClick={onNext}>
                         <span className="material-symbols-outlined">chevron_right</span>
                     </button>
                 </Carrousel>
                 : null
             }
-
-            {/* <Carrousel numberColumns={groupsShows?.length} changeGrid={currentGroupShows.id}>
-                <button id="back-group" ref={refButtonPrev} onClick={() => onPreviousShows()}>
-                    <span className="material-symbols-outlined">chevron_left</span>
-                </button>
-                <section id="grid-section" numberColumns={groupsShows?.length}>
-                    {currentGroupShows ? 
-                        currentGroupShows.series.map(serie => (
-                            <CardStyled key={serie.id} imageBackground={serie.image} dataSerie={serie} />
-                        ))
-                        : null
-                    }
-                </section> 
-
-                <button id="next-group" ref={refButtonNext} onClick={() => onNextShows()}>
-                    <span className="material-symbols-outlined">chevron_right</span>
-                </button>
-            </Carrousel> */}
         </main>
     )
 }
