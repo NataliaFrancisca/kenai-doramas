@@ -4,7 +4,7 @@
 
 ---
 
-### 💁Informações:
+### 💁 Informações:
 
 - Esse projeto foi baseado no **desafio #17 - Kenai** da comunidade codelândia
 - Criado pelo <a href="https://github.com/iuricode"> Iuri Silva </a>
@@ -12,7 +12,7 @@
 
 ---
 
-### Recursos que me ajudaram:
+### 🆘 Recursos que me ajudaram:
 - Carrousel das imagens: https://codepen.io/Raddy/pen/NojQmd
 
 ---
@@ -46,5 +46,7 @@
 - [Twenty-five-Twenty-one](https://m.media-amazon.com/images/M/MV5BOGE2ZDIzZTItOGI2ZS00MWZkLWExM2MtZmRlZTMxMGEzYWM3XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UX1000_.jpg)
 - [The King's Affection](https://images.ctfassets.net/4cd45et68cgf/3rZSeI2edfnagSFWu8dEXS/25629537af0232523bae33706b93a693/KO_TheKing-sAffection_TEASER_RGB_PRE.jpg?w=2560)
 - [Vincenzo](https://br.web.img3.acsta.net/pictures/21/12/03/15/42/0565547.jpg)
+
+---
 
 ![Alt Text](https://media.giphy.com/media/KgEkXAaauAspkndWTa/giphy.gif)
