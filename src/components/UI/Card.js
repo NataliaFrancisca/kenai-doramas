@@ -9,10 +9,9 @@ const Card = ({className, dataSerie}) => {
     return(
         <div className={className}>
             <span>{category[0]}</span>
-            <div className="list-stars">
-                <img src="img/icons/rating.svg" alt="rating"/>
-            </div>
-
+  
+            <img src="img/icons/rating.svg" alt="rating"/>
+        
             <h2>{title}</h2>
 
             <section className="details-serie">
