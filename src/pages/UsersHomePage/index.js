@@ -4,8 +4,11 @@ import {useNavigate} from "react-router-dom"
 
 const UsersHomePageComponent = (props) => {
 
-    const currentTime = new Date();
-    const resultTime = `${currentTime.getHours()}:${currentTime.getMinutes()} ${currentTime.getHours() >= 12 ? "PM" : "AM"}`;
+    const currentTime =  new Date();
+    const minutes = currentTime.getMinutes() < 10 ? `0${currentTime.getMinutes()}` : currentTime.getMinutes();
+    const hours = currentTime.getHours() < 10 ? `0${currentTime.getHours()}` : currentTime.getHours();
+    const resultTime = `${hours}:${minutes} ${currentTime.getHours() >= 12 ? "PM" : "AM"}`;
+    
     const navigate = useNavigate();
 
     const onNavigateProfile = () => {
