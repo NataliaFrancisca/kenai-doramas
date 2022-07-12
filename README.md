@@ -20,7 +20,7 @@
 ### 🖥️ Projeto:
 - 🔗 https://project-kenai-doramas-nf.vercel.app/
 >
-![App Screenshot](https://github.com/NataliaFrancisca/teste/blob/main/first-project-kenai-doramas.png)
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/github-images-6c299.appspot.com/o/first-project-kenai-doramas.png?alt=media&token=e15e5209-40b3-41e3-a2f4-2cb0e533b6de)
 
 ---
 
